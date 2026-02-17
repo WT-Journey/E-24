@@ -14,6 +14,17 @@ body {
     line-height: 1.67;
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: 2px solid tomato;
+}
+
+/* Logo */
+
 .logo {
     color: var(--title-text-color);
     font-family: Comfortaa, cursive;
@@ -25,6 +36,10 @@ body {
 .logo:hover {
     color: var(--accent-color);
 }
+
+/* Page header */
+
+.page-header {}
 
 /* Site nav */
 
@@ -46,54 +61,93 @@ body {
 }
 
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
 /* Hero */
 
+.hero {
+    text-align: center;
+}
+
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 40px;
     color: var(--title-text-color);
     font-weight: 400;
     font-size: 56px;
     line-height: 1.43;
-    text-align: center;
 }
 
 /* Section */
 
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .section-title {
+    margin-top: 0;
+    margin-bottom: 60px;
     color: var(--title-text-color);
     font-weight: 400;
     font-size: 48px;
     line-height: 1.5;
+
+}
+
+.section-title.centered {
     text-align: center;
 }
 
 .section-description {
+    margin-top: 0;
+    margin-bottom: 80px;
     font-size: 36px;
     line-height: 1.39;
 }
 
 /* Features и Examples */
 
-.feature-list .title,
-.work-list .title {
-    color: var(--title-text-color);
+.work-list>.item {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--primary-white-color);
+}
 
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.5;
+.work-list>.item:nth-child(2n) {
+    background-color: var(--secondary-bg-color);
+}
+
+.feature-list p {
+    margin-top: 0;
+    margin-bottom: 32px;
 }
 
 /* Button */
 
 .button {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 11px 34px;
+    min-width: 130px;
+
     color: var(--title-text-color);
     background-color: var(--primary-white-color);
+
     font-weight: 500;
     font-size: 15px;
     line-height: 1.2;
     text-decoration: none;
+    text-align: center;
 }
 
 .button.primary {
@@ -102,6 +156,20 @@ body {
 }
 
 .button.secondary {
+    border-color: var(--accent-color);
+
     color: var(--accent-color);
     background-color: var(--primary-white-color);
+}
+
+/* Footer */
+
+.copyright {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.social>.label {
+    font-size: 15px;
+    line-height: 1.6;
 }
