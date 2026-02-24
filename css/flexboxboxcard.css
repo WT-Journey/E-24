@@ -60,9 +60,24 @@ margin-right: auto;
 }
 
 .item *{
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
 }
 
 .card-heading{
+    /* margin-top: 10px; */
+}
+
+.card-text{
     margin-top: 10px;
+}
+
+.card-content{
+    padding: 15px;
+}
+
+
+.card{
+box-shadow: var(--card-shadow);
+border-radius: 4px;
+overflow: hidden;
 }
